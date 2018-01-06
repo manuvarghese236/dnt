@@ -41,11 +41,12 @@ class BookingsController extends Controller {
      * @return mixed
      */
     public function actionIndex() {
-        $searchModel = new BookingsSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $searchModel_1 = new BookingsSearch();
+       
+        $dataProvider =   $searchModel_1 ->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
-                    'searchModel' => $searchModel,
+                    'searchModel' =>   $searchModel_1 ,
                     'dataProvider' => $dataProvider,
         ]);
     }
@@ -87,6 +88,7 @@ class BookingsController extends Controller {
 
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
+            
             return $this->render('create', [
                         'model' => $model,
             ]);

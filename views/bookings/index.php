@@ -10,6 +10,7 @@ use yii\widgets\ActiveForm;
 
 $this->title = 'Bookings';
 $this->params['breadcrumbs'][] = $this->title;
+
 ?>
 <div class="bookings-index">
 
@@ -25,6 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
         $msg = Yii::$app->session->getFlash('error');
         $this->registerJs('$.notify("' . $msg . '", "error");');
     }
+    
     ?>
     
     <?php $form = ActiveForm::begin([
@@ -52,12 +54,12 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            ['label'=>'Patient',
-                'attribute'=>'patients_id',
-              'format' => 'raw',
-                'value' => function ($data) {
-                    return Html::a($data->patient->name, 
-                            yii\helpers\Url::to(['patient/view', 'id' => $data->patient->id]));},],
+//            ['label'=>'Patient',
+//                'attribute'=>'patients_id',
+//              'format' => 'raw',
+//                'value' => function ($data) {
+//                    return Html::a($data->patient->name, 
+//                            yii\helpers\Url::to(['patient/view', 'id' => $data->patient->id]));},],
             ['label'=>'Doctor',
                 'attribute'=>'doctors_id',
                 'format' => 'raw',
