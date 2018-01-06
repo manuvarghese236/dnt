@@ -1,0 +1,6 @@
+{
+    "name": "Manu-Cumulus",
+    "require": {
+   "yiisoft/yii2-jui": "*"
+    }
+}

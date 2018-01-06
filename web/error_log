@@ -1,0 +1,188 @@
+[31-May-2017 15:03:36 UTC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\widgets\\Bas...', 'yii\\widgets\\{cl...')
+#1 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\widgets\\Bas...')
+#2 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/View.php(328): require('/home/whereismy...')
+#3 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/whereismy...', Array)
+#4 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\widgets\\Bas...', 'yii\\widgets\\{cl...', Array, 14)
+#7 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/View.php(328): require('/home/whereismy...')
+#8 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/whereismy...', Array)
+#9 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#10 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#11 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownPropertyException))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#13 {main}
+Previous exception:
+exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Bookings::patient' in /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('patient')
+#1 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('patient')
+#2 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(202): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Bookings), 'patient', NULL)
+#3 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/grid/DataColumn.php(216): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Bookings), 'patient.name')
+#4 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(app\models\Bookings), 1, 0)
+#5 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Bookings), 1, 0)
+#6 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(app\models\Bookings), 1, 0)
+#7 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(app\models\Bookings), 1, 0)
+#8 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#9 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#10 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#11 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#15 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#16 /home/whereismydoc/public_html/basic/views/bookings/index.php(45): yii\base\Widget::widget(Array)
+#17 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/View.php(328): require('/home/whereismy...')
+#18 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/whereismy...', Array)
+#19 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/whereismy...', Array, Object(app\controllers\BookingsController))
+#20 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\BookingsController))
+#21 /home/whereismydoc/public_html/basic/controllers/BookingsController.php(48): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\BookingsController->actionIndex()
+#23 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#25 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#26 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('bookings/index', Array)
+#27 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 /home/whereismydoc/public_html/basic/web/index.php(12): yii\base\Application->run()
+#29 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/whereismydoc/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/whereismydoc/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => 'timezone=Asia/Kolkata; cpsession=whereismydoc%3azYtrg_LVnMJb7Cwy%2c15ee876085b18ac5d08ccb418fa99e4c; _csrf=18cee8eb6e16a37f6c1e032302c2e0db678d6c75829f4f383540f9267e131063a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_6-fZMe7hVBViZmLnh_6crVrmEgXNlpi%22%3B%7D; PHPSESSID=du0ne0idocojqaviv0c8u5hll5; _identity=595e9bc06dc6062a6480884c7263ef98eb9ecb29a26721df3829d372137b5606a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B2%2C%22%22%2C2592000%5D%22%3B%7D',
+    'HTTP_DNT' => '1',
+    'HTTP_HOST' => 'whereismydoconline.com',
+    'HTTP_REFERER' => 'http://whereismydoconline.com/basic/web/index.php?r=site%2Flogin',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+    'PATH' => '/bin:/usr/bin',
+    'QUERY_STRING' => 'r=bookings%2Findex&type=default',
+    'REDIRECT_STATUS' => '200',
+    'REMOTE_ADDR' => '103.72.178.154',
+    'REMOTE_PORT' => '14472',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/basic/web/index.php?r=bookings%2Findex&type=default',
+    'SCRIPT_FILENAME' => '/home/whereismydoc/public_html/basic/web/index.php',
+    'SCRIPT_NAME' => '/basic/web/index.php',
+    'SERVER_ADDR' => '149.202.77.221',
+    'SERVER_ADMIN' => 'webmaster@whereismydoconline.com',
+    'SERVER_NAME' => 'whereismydoconline.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'Asia/Kolkata',
+    'UNIQUE_ID' => 'WS7bSEyoM3RD7rKNwJJ1sgAAACg',
+    'PHP_SELF' => '/basic/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1496243016.15575408935546875,
+    'REQUEST_TIME' => 1496243016,
+    'argv' => [
+        'r=bookings%2Findex&type=default',
+    ],
+    'argc' => 1,
+]
+[31-May-2017 15:04:37 UTC] PHP Fatal error:  Class 'app\models\patient' not found in /home/whereismydoc/public_html/basic/models/Bookings.php on line 193
+[31-May-2017 15:05:39 UTC] PHP Fatal error:  Class 'app\models\patient' not found in /home/whereismydoc/public_html/basic/models/Bookings.php on line 193
+[31-May-2017 15:06:19 UTC] PHP Fatal error:  Class 'app\models\patient' not found in /home/whereismydoc/public_html/basic/models/Bookings.php on line 193
+[31-May-2017 15:08:02 UTC] PHP Fatal error:  Class 'app\models\patient' not found in /home/whereismydoc/public_html/basic/views/bookings/_form.php on line 97
+[16-Jun-2017 04:27:32 UTC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\widgets\\Bas...', 'yii\\widgets\\{cl...')
+#1 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\widgets\\Bas...')
+#2 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/View.php(328): require('/home/whereismy...')
+#3 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/whereismy...', Array)
+#4 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\widgets\\Bas...', 'yii\\widgets\\{cl...', Array, 13)
+#7 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/View.php(328): require('/home/whereismy...')
+#8 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/whereismy...', Array)
+#9 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#10 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#11 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownPropertyException))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#13 {main}
+Previous exception:
+exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\PatientBookingStatusChange::token_num' in /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('token_num')
+#1 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('token_num')
+#2 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/grid/DataColumn.php(216): yii\helpers\BaseArrayHelper::getValue(Object(app\models\PatientBookingStatusChange), 'token_num')
+#3 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(app\models\PatientBookingStatusChange), 18, 0)
+#4 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(app\models\PatientBookingStatusChange), 18, 0)
+#5 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(app\models\PatientBookingStatusChange), 18, 0)
+#6 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(app\models\PatientBookingStatusChange), 18, 0)
+#7 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#8 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#9 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#10 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#14 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#15 /home/whereismydoc/public_html/basic/views/patient-booking-status-change/index.php(88): yii\base\Widget::widget(Array)
+#16 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/View.php(328): require('/home/whereismy...')
+#17 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/whereismy...', Array)
+#18 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/whereismy...', Array, Object(app\controllers\PatientBookingStatusChangeController))
+#19 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\PatientBookingStatusChangeController))
+#20 /home/whereismydoc/public_html/basic/controllers/PatientBookingStatusChangeController.php(42): yii\base\Controller->render('index', Array)
+#21 [internal function]: app\controllers\PatientBookingStatusChangeController->actionIndex()
+#22 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#25 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('patient-booking...', Array)
+#26 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /home/whereismydoc/public_html/basic/web/index.php(12): yii\base\Application->run()
+#28 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/whereismydoc/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/whereismydoc/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,hi;q=0.6,ml;q=0.4',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => 'timezone=Asia/Kolkata; cpsession=whereismydoc%3aFpZNrKdDO3H8zBH8%2cad81ca1498d50067d001e5e2a3f88602; PHPSESSID=ij8e9i6m2nu7nmdtls3cd3jpg6; _csrf=752629ddbe5c04942d9ceb09042ec82956c0d60969113db57e7772c8cff4e53da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wglfNVJmf6rv0YTFrvfB_mPgXZ3FtsY9%22%3B%7D; _identity=595e9bc06dc6062a6480884c7263ef98eb9ecb29a26721df3829d372137b5606a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B2%2C%22%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'whereismydoconline.com',
+    'HTTP_REFERER' => 'http://whereismydoconline.com/basic/web/index.php?r=bookings%2Fview&id=18',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36',
+    'PATH' => '/bin:/usr/bin',
+    'QUERY_STRING' => 'r=patient-booking-status-change%2Findex&type=default',
+    'REDIRECT_STATUS' => '200',
+    'REMOTE_ADDR' => '117.216.77.198',
+    'REMOTE_PORT' => '11264',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/basic/web/index.php?r=patient-booking-status-change%2Findex&type=default',
+    'SCRIPT_FILENAME' => '/home/whereismydoc/public_html/basic/web/index.php',
+    'SCRIPT_NAME' => '/basic/web/index.php',
+    'SERVER_ADDR' => '149.202.77.221',
+    'SERVER_ADMIN' => 'webmaster@whereismydoconline.com',
+    'SERVER_NAME' => 'whereismydoconline.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'Asia/Kolkata',
+    'UNIQUE_ID' => 'WUNeNFo07LRinD5nk1k3TgAAAAA',
+    'PHP_SELF' => '/basic/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1497587252.4159529209136962890625,
+    'REQUEST_TIME' => 1497587252,
+    'argv' => [
+        'r=patient-booking-status-change%2Findex&type=default',
+    ],
+    'argc' => 1,
+]
+[21-Jun-2017 08:18:27 UTC] PHP Fatal error:  Call to a member function delete() on null in /home/whereismydoc/public_html/basic/controllers/PatientController.php on line 160
