@@ -186,3 +186,186 @@ $_SERVER = [
     'argc' => 1,
 ]
 [21-Jun-2017 08:18:27 UTC] PHP Fatal error:  Call to a member function delete() on null in /home/whereismydoc/public_html/basic/controllers/PatientController.php on line 160
+[07-Jul-2017 04:35:05 UTC] An Error occurred while handling another error:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/error".' in /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#1 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#2 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#3 {main}
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "".' in /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#1 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/whereismydoc/public_html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/whereismydoc/public_html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/whereismydoc/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/whereismydoc/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,hi;q=0.6,ml;q=0.4',
+    'HTTP_HOST' => 'whereismydoconline.com',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36',
+    'HTTP_X_FORWARDED_HOST' => 'whereismydoconline.com',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_SERVER' => 'whereismydoconline.com',
+    'HTTP_X_REAL_IP' => '117.242.21.167',
+    'PATH' => '/bin:/usr/bin',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REMOTE_ADDR' => '117.242.21.167',
+    'REMOTE_PORT' => '56998',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/basic/web/',
+    'SCRIPT_FILENAME' => '/home/whereismydoc/public_html/basic/web/index.php',
+    'SCRIPT_NAME' => '/basic/web/index.php',
+    'SERVER_ADDR' => '149.202.77.221',
+    'SERVER_ADMIN' => 'webmaster@whereismydoconline.com',
+    'SERVER_NAME' => 'whereismydoconline.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'Asia/Kolkata',
+    'UNIQUE_ID' => 'WV8Pd0ODRjKQUUrftVwzyQAAAAA',
+    'PHP_SELF' => '/basic/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1499402103.5345809459686279296875,
+    'REQUEST_TIME' => 1499402103,
+    'argv' => [],
+    'argc' => 0,
+]
+[07-Jul-2017 04:35:25 UTC] An Error occurred while handling another error:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/error".' in /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#1 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#2 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#3 {main}
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "".' in /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#1 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/whereismydoc/public_html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/whereismydoc/public_html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/whereismydoc/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/whereismydoc/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,hi;q=0.6,ml;q=0.4',
+    'HTTP_HOST' => 'whereismydoconline.com',
+    'HTTP_REFERER' => 'http://whereismydoconline.com/basic/',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36',
+    'HTTP_X_FORWARDED_HOST' => 'whereismydoconline.com',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_SERVER' => 'whereismydoconline.com',
+    'HTTP_X_REAL_IP' => '117.242.21.167',
+    'PATH' => '/bin:/usr/bin',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REMOTE_ADDR' => '117.242.21.167',
+    'REMOTE_PORT' => '57209',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/basic/web/',
+    'SCRIPT_FILENAME' => '/home/whereismydoc/public_html/basic/web/index.php',
+    'SCRIPT_NAME' => '/basic/web/index.php',
+    'SERVER_ADDR' => '149.202.77.221',
+    'SERVER_ADMIN' => 'webmaster@whereismydoconline.com',
+    'SERVER_NAME' => 'whereismydoconline.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'Asia/Kolkata',
+    'UNIQUE_ID' => 'WV8Pjb1N4kUVOdWYXpQk7wAAAAQ',
+    'PHP_SELF' => '/basic/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1499402125.882669925689697265625,
+    'REQUEST_TIME' => 1499402125,
+    'argv' => [],
+    'argc' => 0,
+]
+[07-Jul-2017 04:35:30 UTC] An Error occurred while handling another error:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/error".' in /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#1 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#2 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#3 {main}
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "".' in /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#1 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/whereismydoc/public_html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/whereismydoc/public_html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/whereismydoc/public_html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/whereismydoc/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/whereismydoc/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,hi;q=0.6,ml;q=0.4',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_HOST' => 'whereismydoconline.com',
+    'HTTP_REFERER' => 'http://whereismydoconline.com/basic/',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36',
+    'HTTP_X_FORWARDED_HOST' => 'whereismydoconline.com',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_SERVER' => 'whereismydoconline.com',
+    'HTTP_X_REAL_IP' => '117.242.21.167',
+    'PATH' => '/bin:/usr/bin',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REMOTE_ADDR' => '117.242.21.167',
+    'REMOTE_PORT' => '57239',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/basic/web/',
+    'SCRIPT_FILENAME' => '/home/whereismydoc/public_html/basic/web/index.php',
+    'SCRIPT_NAME' => '/basic/web/index.php',
+    'SERVER_ADDR' => '149.202.77.221',
+    'SERVER_ADMIN' => 'webmaster@whereismydoconline.com',
+    'SERVER_NAME' => 'whereismydoconline.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'Asia/Kolkata',
+    'UNIQUE_ID' => 'WV8PkvErUwhXWL0-6BPDSwAAAAo',
+    'PHP_SELF' => '/basic/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1499402130.711018085479736328125,
+    'REQUEST_TIME' => 1499402130,
+    'argv' => [],
+    'argc' => 0,
+]

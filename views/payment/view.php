@@ -36,7 +36,6 @@ $this->params['breadcrumbs'][] = $this->title;
 //            'bill_id',
              ['attribute'=> 'Amount Paid',
                 'value' => $model->amount],
-            'remarks',
         ],
     ]) ?>
 

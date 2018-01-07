@@ -35,7 +35,6 @@ class Payment extends \yii\db\ActiveRecord
             [['amount'], 'number'],
             [['date'], 'safe'],
             [['payment_no'], 'string', 'max' => 300],
-            [['remarks'], 'string', 'max' => 300],
         ];
     }
 
@@ -51,7 +50,6 @@ class Payment extends \yii\db\ActiveRecord
             'status' => 'Status',
             'bill_id' => 'Bill ID',
             'amount' => 'Amount',
-            'remarks' => 'Remarks',
         ];
     }
 }
