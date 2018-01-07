@@ -41,6 +41,43 @@ class BookingsSearch extends Bookings
      *
      * @return ActiveDataProvider
      */
+    public function searchToday($params)
+    {
+        $query = Bookings::find();
+
+        // add conditions that should always apply here
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+
+        $this->load($params);
+
+        if (!$this->validate()) {
+            // uncomment the following line if you do not want to return any records when validation fails
+            // $query->where('0=1');
+            return $dataProvider;
+        }
+
+        $query->joinWith('patient')
+                ->joinWith('doctor');
+        
+        // grid filtering conditions
+        $query->andFilterWhere([
+            'id' => $this->id,
+            'date' => $this->date,
+            'datetime_start' => $this->datetime_start,
+            'datetime_end' => $this->datetime_end,
+            'status_id' => $this->status_id,
+        ]);
+
+        $query->orFilterWhere(['like', 'patient.name',$this->searchstring])
+                ->orFilterWhere(['like', 'doctor.name',$this->searchstring]);
+
+//        echo 'q: '.$query;
+        
+        return $dataProvider;
+    }
     public function search($params)
     {
         $query = Bookings::find();

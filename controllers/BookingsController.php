@@ -11,7 +11,7 @@ use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\helpers\Json;
 use app\models\Daysession;
-
+use yii\data\ActiveDataProvider;
 /**
  * BookingsController implements the CRUD actions for Bookings model.
  */
@@ -103,7 +103,7 @@ class BookingsController extends Controller {
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
@@ -196,6 +196,23 @@ class BookingsController extends Controller {
      * @return Bookings the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
+    public function actionConsultation() {
+        $searchModel = new BookingsSearch();
+
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => BookingsSearch::find(),
+            'pagination' => [
+                'pageSize' => 20,
+            ],
+        ]);
+
+        return $this->render('consultation', [
+                    'searchModel' => $searchModel,
+                    'dataProvider' => $dataProvider,
+        ]);
+    }
+
     protected function findModel($id) {
         if (($model = Bookings::findOne($id)) !== null) {
             return $model;
